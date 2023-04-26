@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Recuperatorio</string>
+    <string-array name="gender_options">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Otro</item>
+    </string-array>
+</resources>
