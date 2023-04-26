@@ -23,8 +23,6 @@ public class CalcularActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityCalcularBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        TextView tx = findViewById(R.id.calculo);
-        TextView rt = findViewById(R.id.persona);
         CalcularActivityViewModel vm = ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication()).create(CalcularActivityViewModel.class);
         Bundle bundle = getIntent().getExtras();
 
@@ -38,8 +36,8 @@ public class CalcularActivity extends AppCompatActivity {
             @Override
             public void onChanged(Persona persona) {
                 binding.persona.setText("Nombre: "+persona.getNombre()+
-                        "\n Altura: "+persona.getEdad()+
-                        "\n Edad: "+persona.getAltura()+
+                        "\n Edad: "+persona.getEdad()+
+                        "\n Altura: "+persona.getAltura()+
                          "\n Peso: "+persona.getPeso()+
                          "\n Sexo: "+persona.getSexo());
             }
